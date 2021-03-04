@@ -32,6 +32,9 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
+                <a class="navbar" href="{{ route('list.announcement') }}">
+                    Voir les annonces
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -66,6 +69,9 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('user.settings') }}">
                                         Mon compte
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('user.settings.create.announcement') }}">
+                                        Ajouter une annonce
                                     </a>
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
